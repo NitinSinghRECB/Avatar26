@@ -37,16 +37,16 @@ const IntroAnimation = ({ onComplete }) => {
           <div className="intro-si"><svg width="30" height="34"><polygon points="15,2 28,32 2,32" fill="none" stroke="#00C9B1" strokeWidth="2.5"/></svg></div>
           <div className="intro-si"><svg width="30" height="30"><rect x="3" y="3" width="24" height="24" fill="none" stroke="#FF0066" strokeWidth="2.5"/></svg></div>
         </div>
-        <div className="intro-title">
-          ΛVΛTΛR<span>'26</span>
-          <div className="intro-glitch1">ΛVΛTΛR'26</div>
-          <div className="intro-glitch2">ΛVΛTΛR'26</div>
+        <div className="intro-title font-squid">
+          AVATAR'26
+          <div className="intro-glitch1">AVATAR'26</div>
+          <div className="intro-glitch2">AVATAR'26</div>
         </div>
         <div className="intro-tagline">A Visual Abstract in Technology Advancement to Reverberate</div>
       </div>
       <div className="intro-loader">
         <div className="intro-loader-track"><div className="intro-loader-fill"></div></div>
-        <div className="intro-loader-text">Entering the Arena...</div>
+        <div className="intro-loader-text font-squid" style={{fontSize: '14px', letterSpacing: '4px', color: 'var(--teal)', marginTop: '15px'}}>AVATAR'26 LOADING...</div>
       </div>
       <button className="intro-skip" onClick={handleSkip}>SKIP ▸</button>
     </div>
