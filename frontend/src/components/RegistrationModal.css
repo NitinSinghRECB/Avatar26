@@ -124,6 +124,11 @@
   box-shadow: 0 0 10px rgba(0,201,177,0.2);
 }
 
+.reg-form select option {
+  background: var(--dark);
+  color: var(--white);
+}
+
 .team-section {
   background: rgba(255,255,255,0.02);
   border: 1px dashed rgba(255,255,255,0.2);
