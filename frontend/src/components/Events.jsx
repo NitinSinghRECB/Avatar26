@@ -86,12 +86,6 @@ const Events = ({ onRegisterClick }) => {
           </div>
         ))}
       </div>
-      
-      <div className="events-footer">
-        <button className="btn-secondary font-squid" onClick={() => onRegisterClick('General')}>
-          REGISTER FOR GENERAL PASS
-        </button>
-      </div>
     </section>
   );
 };

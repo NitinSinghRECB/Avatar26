@@ -26,11 +26,6 @@ const Navbar = ({ onRegisterClick }) => {
           <li><a href="/#timeline">Schedule</a></li>
           <li><a href="/team">Team</a></li>
           <li><a href="/#faq">FAQ</a></li>
-          <li>
-            <button onClick={() => onRegisterClick()} className="nav-register-btn font-squid">
-              Register Now
-            </button>
-          </li>
         </ul>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
@@ -49,9 +44,6 @@ const Navbar = ({ onRegisterClick }) => {
         <a href="/team" onClick={toggleMobileMenu}>Team</a>
         <a href="/#location" onClick={toggleMobileMenu}>Location</a>
         <a href="/#faq" onClick={toggleMobileMenu}>FAQ</a>
-        <button className="mobile-reg-btn font-squid" onClick={() => { toggleMobileMenu(); onRegisterClick(); }}>
-          Register Now
-        </button>
         <a href="/admin" className="mobile-admin-btn font-squid" onClick={toggleMobileMenu}>
           Admin Panel
         </a>
