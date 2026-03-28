@@ -9,6 +9,7 @@ const rateLimit = require('express-rate-limit');
 const authRoutes = require('./routes/auth');
 const registrationRoutes = require('./routes/registrations');
 const exportRoutes = require('./routes/export');
+const proniteRoutes = require('./routes/pronite');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -53,6 +54,7 @@ app.get('/', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/registrations', registrationRoutes);
 app.use('/api/export', exportRoutes);
+app.use('/api/pronite', proniteRoutes);
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {
