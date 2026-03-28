@@ -1,0 +1,152 @@
+/* ===== HERO ===== */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 40px;
+  overflow: hidden;
+  background: url('/squid-bg.jpg') center/cover no-repeat;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(6,6,8,0.7) 0%, rgba(6,6,8,0.95) 100%);
+  z-index: 1; pointer-events: none;
+}
+
+.hero-particles { position:absolute; inset:0; z-index:1; opacity:0.3; }
+
+.hero-shapes { position:absolute; inset:0; z-index:2; pointer-events:none; }
+.hs { position:absolute; opacity:0.15; filter:drop-shadow(0 0 15px rgba(255,255,255,0.2)); animation:float-shape 12s infinite ease-in-out; }
+.hs-circle { top:20%; left:10%; animation-delay:0s; }
+.hs-triangle { top:30%; right:15%; animation-delay:-4s; }
+.hs-square { bottom:20%; left:20%; animation-delay:-8s; }
+
+@keyframes float-shape {
+  0%,100% { transform:translateY(0) rotate(0deg) scale(1); }
+  50% { transform:translateY(-40px) rotate(20deg) scale(1.1); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0,201,177,0.1);
+  border: 1px solid rgba(0,201,177,0.3);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-family: 'Black Han Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: var(--teal);
+  margin-bottom: 24px;
+}
+.badge-dot {
+  width: 8px; height: 8px;
+  background: var(--teal); border-radius: 50%;
+}
+
+.hero-title {
+  font-size: clamp(60px, 12vw, 150px);
+  line-height: 1;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 40px var(--pink-glow), 0 0 100px rgba(255,0,102,0.2);
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: clamp(18px, 4vw, 32px);
+  letter-spacing: 12px;
+  color: var(--teal);
+  margin-bottom: 24px;
+  text-shadow: 0 0 20px var(--teal-glow);
+  text-transform: uppercase;
+}
+
+.hero-desc {
+  font-size: clamp(14px, 2vw, 18px);
+  color: var(--cream);
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 16px 36px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background: var(--pink);
+  color: #fff;
+  border: 1px solid var(--pink);
+  box-shadow: 0 0 20px var(--pink-glow), inset 0 0 10px rgba(255,255,255,0.2);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--pink);
+  box-shadow: 0 0 40px var(--pink-glow);
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  border: 1px solid var(--teal);
+  color: var(--teal);
+  box-shadow: inset 0 0 10px rgba(0,201,177,0.1);
+}
+.btn-secondary:hover {
+  background: var(--teal);
+  color: var(--dark);
+  box-shadow: 0 0 30px var(--teal-glow);
+  transform: translateY(-2px);
+}
+
+.scroll-indicator {
+  position: absolute; bottom: 40px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  opacity: 0.5; animation: bounce-slow 2s infinite;
+  z-index: 10;
+}
+.scroll-indicator .mouse {
+  width: 26px; height: 40px;
+  border: 2px solid var(--white);
+  border-radius: 20px;
+  position: relative;
+}
+.scroll-indicator .mouse::before {
+  content:''; position:absolute;
+  top:8px; left:50%; transform:translateX(-50%);
+  width:4px; height:6px; background:var(--pink);
+  border-radius:2px; animation:scroll-down 1.5s infinite;
+}
+.scroll-indicator span {
+  font-size: 10px; font-family: 'Black Han Sans', sans-serif;
+  letter-spacing: 3px;
+}
+@keyframes scroll-down { 0%{opacity:1;top:8px} 100%{opacity:0;top:20px} }
+@keyframes bounce-slow { 0%,100%{transform:translate(-50%,0)} 50%{transform:translate(-50%,10px)} }

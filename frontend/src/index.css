@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Game Of Squids';
+  src: url('/fonts/Game Of Squids.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --pink: #FF0066;
+  --teal: #00C9B1;
+  --dark: #060608;
+  --card-bg: #0d0d10;
+  --mid-bg: #09090c;
+  --pink-glow: rgba(255,0,102,0.5);
+  --teal-glow: rgba(0,201,177,0.5);
+  --white: #ffffff;
+  --cream: #F8F0E3;
+  --gray: #888;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+
+body {
+  background: var(--dark);
+  color: var(--white);
+  font-family: 'Nanum Gothic', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: var(--pink); border-radius: 3px; }
+
+/* SCANLINES FOR ADMIN */
+body.admin-bg::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px,
+      rgba(0, 0, 0, 0.08) 2px, rgba(0, 0, 0, 0.08) 4px);
+  animation: scan-drift 8s linear infinite;
+}
+
+@keyframes scan-drift {
+  from { background-position: 0 0 }
+  to { background-position: 0 200px }
+}
+
+/* ===== SQUID GAME FONT STYLING ===== */
+/* Game Of Squids feel using Black Han Sans / Game Of Squids font:
+   - Wide tracking, geometric, stark contrast
+   - Pink/teal glow on key elements
+   - Thin weight illusion via letter-spacing + text-shadow
+*/
+
+.font-squid {
+  font-family: 'Game Of Squids', 'Black Han Sans', sans-serif !important;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif !important;
+}
+  
+.font-special {
+  font-family: 'Special Elite', cursive !important;
+}
+
+/* Shared Title Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.av-letter {
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(135deg, #fff 0%, #FF0066 45%, #fff 60%, #00C9B1 85%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 300% 300%;
+  filter: drop-shadow(0 0 30px rgba(255,0,102,0.8)) drop-shadow(0 0 60px rgba(0,201,177,0.3));
+}
+
+/* Utility Animations */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px var(--teal-glow) }
+  50% { opacity: 0.4; box-shadow: 0 0 3px var(--teal-glow) }
+}
+
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(30px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease both;
+}

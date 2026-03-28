@@ -1,0 +1,122 @@
+/* ===== TIMELINE ===== */
+.timeline-section {
+  padding: 100px 20px;
+  background: var(--dark);
+  border-top: 1px solid rgba(0,201,177,0.1);
+  border-bottom: 1px solid rgba(255,0,102,0.1);
+}
+
+.timeline-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tl-day {
+  margin-bottom: 60px;
+}
+
+.tl-day-header {
+  font-size: 32px;
+  color: var(--white);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 15px;
+}
+
+.tl-day-header span {
+  color: var(--pink);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+
+.tl-item {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.tl-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tl-time {
+  width: 120px;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: var(--teal);
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 5px;
+  letter-spacing: 2px;
+}
+
+.tl-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin: 0 20px;
+}
+
+.tl-marker svg {
+  background: var(--dark);
+  filter: drop-shadow(0 0 10px rgba(255,0,102,0.5));
+}
+
+.tl-line {
+  width: 2px;
+  flex-grow: 1;
+  background: linear-gradient(to bottom, rgba(255,0,102,0.5), rgba(0,201,177,0.5));
+  margin-top: 10px;
+  min-height: 50px;
+}
+
+.tl-item:last-child .tl-line { display: none; }
+
+.tl-content {
+  flex-grow: 1;
+  background: var(--card-bg);
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s;
+}
+
+.tl-item:hover .tl-content {
+  border-color: rgba(0,201,177,0.3);
+  box-shadow: 0 10px 30px rgba(0,201,177,0.1);
+  transform: translateX(10px);
+}
+
+.tl-content h4 {
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.tl-content p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 11px;
+  color: var(--cream);
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media(max-width: 768px) {
+  .tl-item { flex-direction: column; }
+  .tl-time { text-align: left; padding: 0 0 10px 45px; width: 100%; }
+  .tl-marker { position: absolute; left: 0; top: 30px; margin: 0; bottom: -30px; }
+  .tl-line { height: 100%; min-height: none; }
+  .tl-content { margin-left: 45px; }
+}

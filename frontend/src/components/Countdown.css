@@ -1,0 +1,61 @@
+/* ===== COUNTDOWN ===== */
+.countdown-section {
+  padding: 80px 20px;
+  background: var(--dark);
+  text-align: center;
+  position: relative;
+  border-top: 1px solid rgba(255,0,102,0.1);
+  border-bottom: 1px solid rgba(0,201,177,0.1);
+}
+
+.countdown-title {
+  font-size: clamp(24px, 4vw, 36px);
+  letter-spacing: 8px;
+  color: var(--teal);
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px var(--teal-glow);
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cd-box {
+  background: rgba(255,0,102,0.05);
+  border: 1px solid rgba(255,0,102,0.3);
+  padding: 20px 30px;
+  border-radius: 8px;
+  min-width: 140px;
+  box-shadow: inset 0 0 20px rgba(255,0,102,0.05);
+}
+
+.cd-box span {
+  display: block;
+  font-size: clamp(40px, 6vw, 64px);
+  color: var(--white);
+  text-shadow: 0 0 20px var(--pink-glow);
+  margin-bottom: 10px;
+}
+
+.cd-box p {
+  font-family: 'Orbitron', 'Black Han Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: var(--teal);
+}
+
+.cd-sep {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 40px;
+  color: var(--pink);
+  text-shadow: 0 0 15px var(--pink-glow);
+}
+
+@media(max-width: 768px) {
+  .cd-box { min-width: 100px; padding: 15px; }
+  .cd-sep { display: none; }
+}
