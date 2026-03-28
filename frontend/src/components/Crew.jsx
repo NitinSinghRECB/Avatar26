@@ -12,7 +12,7 @@ const Crew = () => {
     <section id="crew" className="crew-section">
       <div className="crew-header">
         <h2 className="section-title font-squid" style={{textAlign: 'center', marginBottom: '20px'}}>
-          THE <span style={{color: 'var(--teal)'}}>FRONT</span> MEN
+          OUR <span style={{color: 'var(--teal)'}}>COORDINATORS</span>
         </h2>
         <p className="crew-subtitle font-orbitron">THE ARCHITECTS OF THE GAME</p>
       </div>
@@ -31,7 +31,6 @@ const Crew = () => {
               </div>
             </div>
             <h3 className="crew-name font-squid">{member.name}</h3>
-            <p className="crew-role font-orbitron">{member.role}</p>
           </div>
         ))}
       </div>

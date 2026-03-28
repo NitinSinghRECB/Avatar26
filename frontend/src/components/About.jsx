@@ -48,11 +48,11 @@ const About = () => {
               <p>EVENTS</p>
             </div>
             <div className="stat-item">
-              <h3 className="font-squid" style={{color: 'var(--teal)'}}>50K+</h3>
-              <p>PRIZE POOL</p>
+              <h3 className="font-squid" style={{color: 'var(--teal)'}}>LEARNINGS+</h3>
+              <p>EXPERIENCE</p>
             </div>
             <div className="stat-item">
-              <h3 className="font-squid">3</h3>
+              <h3 className="font-squid">2</h3>
               <p>DAYS</p>
             </div>
           </div>

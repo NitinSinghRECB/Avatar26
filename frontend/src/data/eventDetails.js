@@ -9,7 +9,7 @@ export const eventDetailsData = {
     venue: "Computer Center",
     date: "8th April 2026",
     time: "11:45 AM",
-    teamSize: "Open",
+    teamSize: "Solo",
     rules: [
       "Participants must solve problems using allowed languages (C, C++, Java, Python, JavaScript).",
       "Use of predefined code snippets or unauthorized software is prohibited.",
@@ -21,8 +21,8 @@ export const eventDetailsData = {
       "Execution Time (20%)",
       "Variable Naming & Readability (20%)"
     ],
-    coordinators: ["Pradeep Chaudhary", "Krishna Kant Singh", "Rajat Tripathi"],
-    volunteers: ["Ayush Kumar", "Chhatrasal Singh", "Aniruddh Yadav", "Pappu Kumar"]
+    coordinators: ["Abhimanyu Singh" , "Nitin Kumar Singh"],
+    volunteers: ["Ayush Kumar", "Chhatrasal Singh", "Aniruddh Yadav", "Pappu Kumar" , "Aman Patel" , "Akash Kumar"]
   },
   "ideathon": {
     id: "ideathon",
@@ -34,7 +34,7 @@ export const eventDetailsData = {
     venue: "To Be Announced",
     date: "8th April 2026",
     time: "09:30 AM",
-    teamSize: "Open",
+    teamSize: "Max 4",
     rules: [
       "Present solutions for provided problem statements or open themes.",
       "Maximum of 10 slides per presentation.",
@@ -60,7 +60,7 @@ export const eventDetailsData = {
     venue: "Computer Center",
     date: "7th April 2026",
     time: "02:00 PM - 04:30 PM",
-    teamSize: "Open",
+    teamSize: "Max 2",
     rules: [
       "Only the Tinkercad platform is allowed for designing and simulation.",
       "Each participant/team can submit only one project.",
@@ -88,7 +88,7 @@ export const eventDetailsData = {
     venue: "Electronics Lab (TBC)",
     date: "7th April 2026",
     time: "02:00 PM - 04:30 PM",
-    teamSize: "Open",
+    teamSize: "Max 4",
     rules: [
       "Hardware components must be properly connected on a breadboard.",
       "No pre-assembled circuits allowed before the event begins.",
@@ -114,7 +114,7 @@ export const eventDetailsData = {
     venue: "Campus Wide",
     date: "7th April 2026",
     time: "04:30 PM",
-    teamSize: "Team",
+    teamSize: "Max 4",
     rules: [
       "Teams must stay together throughout the hunt.",
       "Tampering with or destroying clues leads to immediate disqualification.",
@@ -137,7 +137,7 @@ export const eventDetailsData = {
     venue: "Tech Block",
     date: "8th April 2026",
     time: "05:00 PM - 07:30 PM",
-    teamSize: "Open",
+    teamSize: "Max 4",
     rules: [
       "Egg must be 40% visible; failing to achieve the target leads to disqualification.",
       "Device must fit within size limits (30cm max).",
@@ -188,7 +188,7 @@ export const eventDetailsData = {
     venue: "To Be Announced",
     date: "7th April 2026",
     time: "11:00 AM (1.5 Hours)",
-    teamSize: "Open",
+    teamSize: "Max 4",
     rules: [
       "Only the provided chopsticks and adhesives may be used.",
       "The bridge must span the predefined gap entirely unassisted.",
@@ -241,7 +241,7 @@ export const eventDetailsData = {
     venue: "Outside SAC",
     date: "7th April 2026",
     time: "03:30 PM",
-    teamSize: "Open",
+    teamSize: "Max 4",
     rules: [
       "Team size: 2-4 participants; cross-Branch teams permitted.",
       "Robot constraints: must fit within 30x30x30 cm; weight <= 5 kg; 5% tolerance.",
@@ -266,7 +266,7 @@ export const eventDetailsData = {
     venue: "Grounds",
     date: "8th April 2026",
     time: "02:00 PM",
-    teamSize: "Open",
+    teamSize: "Max 4",
     rules: [
       "Rockets must be strictly built using standard plastic bottles and basic materials.",
       "Only water and compressed air are allowed as propellants.",
@@ -291,7 +291,7 @@ export const eventDetailsData = {
     venue: "Computer Center",
     date: "8th April 2026",
     time: "02:00 PM - 02:45 PM",
-    teamSize: "Solo",
+    teamSize: "Duo",
     rules: [
       "Participants must bring their own laptop/Phone.",
       "Use of AI tools is allowed (only specified ones if needed).",

@@ -3,18 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import './Events.css';
 
 const eventsList = [
-  { id: 'codecraft', title: 'CODECRAFT', type: 'Coding + Puzzles', desc: 'Logic and Programming challenges.', icon: 'circle', color: 'pink', teamSize: 'Open', time: 'Day 2 - 11:45 AM' },
-  { id: 'ideathon', title: 'IDEATHON', type: 'Idea + Solution', desc: 'Innovation, Research, and Pitching.', icon: 'triangle', color: 'teal', teamSize: 'Open', time: 'Day 2 - 09:30 AM' },
-  { id: 'circuit-sim', title: 'CIRCUIT CRAZE (SIMULATION)', type: 'Electronics + Design', desc: 'Circuit Design and Schematic Thinking.', icon: 'square', color: 'pink', teamSize: 'Open', time: 'Day 1 - 02:00 PM' },
-  { id: 'circuit-hard', title: 'CIRCUIT CRAZE (HARDWARE)', type: 'Electronics + Hands-On', desc: 'Breadboard Building, Wiring, Practical Skills.', icon: 'circle', color: 'teal', teamSize: 'Open', time: 'Day 1 - 02:00 PM' },
-  { id: 'treasure', title: 'TREASURE HUNT', type: 'Logic + Team Adventure', desc: 'Teamwork and Clue-solving.', icon: 'triangle', color: 'pink', teamSize: 'Team', time: 'Day 1 - 04:30 PM' },
-  { id: 'eggdrop', title: 'EGG DROP CHALLENGE', type: 'Engineering + Creativity', desc: 'Physics and Impact Absorption.', icon: 'square', color: 'teal', teamSize: 'Open', time: 'Day 2 - 03:30 PM' },
+  { id: 'codecraft', title: 'CODECRAFT', type: 'Coding + Puzzles', desc: 'Logic and Programming challenges.', icon: 'circle', color: 'pink', teamSize: 'Solo', time: 'Day 2 - 11:45 AM' },
+  { id: 'ideathon', title: 'IDEATHON', type: 'Idea + Solution', desc: 'Innovation, Research, and Pitching.', icon: 'triangle', color: 'teal', teamSize: 'Max 4', time: 'Day 2 - 09:30 AM' },
+  { id: 'circuit-sim', title: 'CIRCUIT CRAZE (SIMULATION)', type: 'Electronics + Design', desc: 'Circuit Design and Schematic Thinking.', icon: 'square', color: 'pink', teamSize: 'Max 2', time: 'Day 1 - 02:00 PM' },
+  { id: 'circuit-hard', title: 'CIRCUIT CRAZE (HARDWARE)', type: 'Electronics + Hands-On', desc: 'Breadboard Building, Wiring, Practical Skills.', icon: 'circle', color: 'teal', teamSize: 'Max 4', time: 'Day 1 - 02:00 PM' },
+  { id: 'treasure', title: 'TREASURE HUNT', type: 'Logic + Team Adventure', desc: 'Teamwork and Clue-solving.', icon: 'triangle', color: 'pink', teamSize: 'Max 4', time: 'Day 1 - 04:30 PM' },
+  { id: 'eggdrop', title: 'EGG DROP CHALLENGE', type: 'Engineering + Creativity', desc: 'Physics and Impact Absorption.', icon: 'square', color: 'teal', teamSize: 'Max 4', time: 'Day 2 - 03:30 PM' },
   { id: 'cubic', title: 'CUBIC PUZZLE', type: 'Logic + Pattern', desc: 'Memory and Reasoning.', icon: 'circle', color: 'pink', teamSize: 'Solo', time: 'Day 1 - 10:00 AM' },
-  { id: 'stickbuild', title: 'STICKBUILD (CHOPSTICK BRIDGE)', type: 'Structural Challenge', desc: 'Design and Load-bearing Structures.', icon: 'triangle', color: 'teal', teamSize: 'Open', time: 'Day 1 - 11:00 AM' },
+  { id: 'stickbuild', title: 'STICKBUILD (CHOPSTICK BRIDGE)', type: 'Structural Challenge', desc: 'Design and Load-bearing Structures.', icon: 'triangle', color: 'teal', teamSize: 'Max 4', time: 'Day 1 - 11:00 AM' },
   { id: 'poster', title: 'POSTER DESIGN', type: 'Creative Tech', desc: 'Visual Communication and Design Skills.', icon: 'square', color: 'pink', teamSize: 'Solo', time: 'Day 1 - 11:30 AM' },
-  { id: 'robogames', title: 'ROBOGAMES', type: 'Robotics Competition', desc: 'Robotics Control, Speed, Strategy, Engineering Skills.', icon: 'circle', color: 'teal', teamSize: 'Open', time: 'Day 1 - 03:30 PM' },
-  { id: 'rocket', title: 'ROCKET LAUNCHER', type: 'Aerospace + Engineering', desc: 'Physics, Propulsion, Launch Mechanics.', icon: 'triangle', color: 'pink', teamSize: 'Open', time: 'Day 2 - 02:00 PM' },
-  { id: 'prompt', title: 'PROMPT ENGINEERING', type: 'AI + Creativity', desc: 'AI Interaction, Logical Thinking, Creativity.', icon: 'square', color: 'teal', teamSize: 'Solo', time: 'Day 1 - 12:00 PM' },
+  { id: 'robogames', title: 'ROBOGAMES', type: 'Robotics Competition', desc: 'Robotics Control, Speed, Strategy, Engineering Skills.', icon: 'circle', color: 'teal', teamSize: 'Max 4', time: 'Day 1 - 03:30 PM' },
+  { id: 'rocket', title: 'ROCKET LAUNCHER', type: 'Aerospace + Engineering', desc: 'Physics, Propulsion, Launch Mechanics.', icon: 'triangle', color: 'pink', teamSize: 'Max 4', time: 'Day 2 - 02:00 PM' },
+  { id: 'prompt', title: 'PROMPT ENGINEERING', type: 'AI + Creativity', desc: 'AI Interaction, Logical Thinking, Creativity.', icon: 'square', color: 'teal', teamSize: 'Duo', time: 'Day 1 - 12:00 PM' },
   { id: 'hanoi', title: 'TOWER OF HANOI', type: 'Fun Activity', desc: 'Logical puzzle and fun brain challenge.', icon: 'circle', color: 'pink', teamSize: 'Solo', time: 'Day 2 - 11:00 AM' },
   { id: 'aerofury', title: 'AEROFURY', type: 'Drone Racing', desc: 'High-speed drone racing and obstacle navigation.', icon: 'triangle', color: 'teal', teamSize: 'Max 4', time: 'Day 2 - 04:00 PM' },
 ];

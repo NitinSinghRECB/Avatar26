@@ -21,10 +21,11 @@ const schedule = [
       { time: '11:45 AM', title: 'CodeCraft', location: 'Computer Center', icon: 'square' },
       { time: '02:00 PM', title: 'Rocket Launcher', location: 'Grounds', icon: 'triangle' },
       { time: '03:30 PM', title: 'Egg Drop Challenge', location: 'Tech Block', icon: 'square' },
-      { time: '06:00 PM', title: 'Grand Finale & Prizes', location: 'Main Stage', icon: 'circle' },
+      { time: '06:00 PM', title: 'DJ NIGHT', location: 'TBD', icon: 'circle' },
     ]
   }
 ];
+
 
 const TimelineIcon = ({ type }) => {
   if (type === 'circle') return <svg width="24" height="24"><circle cx="12" cy="12" r="10" fill="none" stroke="#FF0066" strokeWidth="2"/></svg>;

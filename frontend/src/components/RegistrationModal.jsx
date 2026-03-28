@@ -33,11 +33,19 @@ const RegistrationModal = ({ isOpen, onClose, preSelectedEvent }) => {
   };
 
   const addTeamMember = () => {
-    const maxAdditionalMembers = formData.event === 'AEROFURY' ? 3 : 4;
+    let maxAdditionalMembers = 3; // Default Max 4 Total (1 leader + 3 members)
+
+    if (formData.event === 'CIRCUIT CRAZE (SIMULATION)' || formData.event === 'PROMPT ENGINEERING') {
+      maxAdditionalMembers = 1; // Max 2 Total
+    } else if (['CODECRAFT', 'CUBIC PUZZLE', 'POSTER DESIGN', 'TOWER OF HANOI'].includes(formData.event)) {
+      maxAdditionalMembers = 0; // Max 1 Total
+    }
+
     if (teamMembers.length < maxAdditionalMembers) {
       setTeamMembers([...teamMembers, { name: '', email: '' }]);
     } else {
-      setError(`Maximum ${maxAdditionalMembers + 1} participants allowed for ${formData.event}.`);
+      const totalAllowed = maxAdditionalMembers + 1;
+      setError(`Maximum ${totalAllowed} participant${totalAllowed > 1 ? 's' : ''} allowed for ${formData.event}.`);
     }
   };
 
@@ -182,7 +190,7 @@ const RegistrationModal = ({ isOpen, onClose, preSelectedEvent }) => {
             </div>
           </div>
 
-          {(!['General', 'CUBIC PUZZLE', 'POSTER DESIGN', 'PROMPT ENGINEERING', 'TOWER OF HANOI'].includes(formData.event)) && (
+          {(!['General', 'CODECRAFT', 'CUBIC PUZZLE', 'POSTER DESIGN', 'TOWER OF HANOI'].includes(formData.event)) && (
              <div className="team-section">
                 <div className="team-header">
                   <label style={{marginBottom:0}}>Team Members (Optional)</label>

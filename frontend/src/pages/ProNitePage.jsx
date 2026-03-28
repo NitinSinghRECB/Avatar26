@@ -100,7 +100,7 @@ const ProNitePage = () => {
             <div className="pn-info-card">
               <div className="pn-info-icon">⚡</div>
               <h3 className="font-squid">WHAT'S INCLUDED</h3>
-              <p className="font-orbitron">Free entry to DJ Night, exclusive dance floor access, and a chance to win special prizes during the night.</p>
+              <p className="font-orbitron">Free entry to DJ Night, exclusive dance floor access, and a chance to win special recognition during the night.</p>
             </div>
           </div>
 
