@@ -8,9 +8,6 @@ const TeamPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const faculty = [
-   'Dr. Siddhartha Kumar Arjaria' , 'Dr. Pushpendra Singh', 'Mr. Abhijeet Singh'
-  ];
 
   const studentCoordinators = [
     { role: 'Organizer', names: 'Aditya Gautam'},
@@ -53,16 +50,6 @@ const TeamPage = () => {
           <p className="font-orbitron" style={{ color: 'var(--cream)', opacity: 0.6, letterSpacing: '2px' }}>THE ARCHITECTS OF AVATAR'26</p>
         </div>
 
-        <div style={{ marginBottom: '50px' }}>
-          <h2 className="font-squid" style={{ color: 'var(--pink)', borderBottom: '1px dashed var(--pink)', paddingBottom: '10px', marginBottom: '25px', fontSize: '24px' }}>FACULTY COORDINATORS</h2>
-          <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-            {faculty.map((name, i) => (
-              <div key={i} style={{ background: 'rgba(255,0,102,0.05)', border: '1px solid rgba(255,0,102,0.2)', padding: '15px 25px', borderRadius: '4px', flex: '1 1 250px' }}>
-                <div className="font-squid" style={{ color: 'var(--white)', fontSize: '18px' }}>{name}</div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         <div style={{ marginBottom: '50px' }}>
           <h2 className="font-squid" style={{ color: 'var(--teal)', borderBottom: '1px dashed var(--teal)', paddingBottom: '10px', marginBottom: '25px', fontSize: '24px' }}>STUDENT COORDINATORS</h2>

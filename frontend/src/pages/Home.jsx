@@ -6,7 +6,6 @@ import About from '../components/About';
 import Events from '../components/Events';
 import Timeline from '../components/Timeline';
 import Countdown from '../components/Countdown';
-import Crew from '../components/Crew';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import RegistrationModal from '../components/RegistrationModal';
@@ -47,7 +46,6 @@ const Home = () => {
       <About />
       <Events onRegisterClick={openRegModal} />
       <Timeline />
-      <Crew />
       <FAQ />
       <Footer />
 
