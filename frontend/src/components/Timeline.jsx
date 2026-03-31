@@ -21,7 +21,7 @@ const schedule = [
       { time: '11:45 AM', title: 'CodeCraft', location: 'Computer Center', icon: 'square' },
       { time: '02:00 PM', title: 'Rocket Launcher', location: 'Grounds', icon: 'triangle' },
       { time: '03:30 PM', title: 'Egg Drop Challenge', location: 'Tech Block', icon: 'square' },
-      { time: '06:00 PM', title: 'DJ NIGHT', location: 'TBD', icon: 'circle' },
+      { time: '06:00 PM', title: 'Closing Ceremony', location: 'Tech Block', icon: 'circle' },
     ]
   }
 ];

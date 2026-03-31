@@ -10,12 +10,11 @@ const TeamPage = () => {
 
 
   const studentCoordinators = [
-    { role: 'Organizer', names: 'Aditya Gautam'},
     { role: 'Head Coordinators', names: 'Pradeep Chaudhary, Krishna Kant Singh'},
     { role: 'Code Craft', names: 'Abhimanyu Singh, Nitin Kumar Singh' },
     { role: 'Prompt Engineering', names: 'Nitin Kumar Singh, Sanny Kumar' },
     { role: 'Cubic Puzzle', names: 'Divyansh Pandey, Saurabh Kumar Saroj' },
-    { role: 'Treasure Hunt', names: 'Kshitij Rastogi, Abhishek Gangwar, Anand Bind, Yashnil Singh, Samarth Singh' },
+    { role: 'Treasure Hunt', names: 'Pratham Singh, Kshitij Rastogi, Abhishek Gangwar, Anand Bind, Yashnil Singh' },
     { role: 'Social Media Team', names: 'Ravi' },
     { role: 'Poster Design', names: 'Raghvendra Singh, Anivesh Tyagi' },
     { role: 'Robo Games', names: 'Lucky Singh, Samarth Gupta' },
